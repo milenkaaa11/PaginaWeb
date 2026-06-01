@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; 
+    background-color: #eae5da;
+    color: #1a1c1b;
+    min-height: 100vh;
+    letter-spacing: 0.2px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #eae5da;
+    padding: 50px 0 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: 400;
+    color: #2b3a2f;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    background-color: #eae5da;
+    padding: 15px 0 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #cebfa8;
+}
+
+nav a {
+    font-family: 'Arial', sans-serif;
+    color: #555c58;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #3b5241;
+    border-bottom: 2px solid #3b5241;
+}
+
+.contenedor {
+    width: 85%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #faf8f5;
+    padding: 60px;
+    border: 2px solid #cebfa8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2b3a2f;
+    margin-top: 30px; 
+    margin-bottom: 40px; 
+    text-align: left;
+    letter-spacing: 1px;
+    border-left: 4px solid #3b5241;
+    padding-left: 15px; 
+    padding-bottom: 2px;
+}
+
+/* --- formularios --- */
+.form-label {
+    font-family: 'Arial', sans-serif;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #2b3a2f;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-bottom: 2px solid #cebfa8;
+    font-size: 16px;
+    background-color: #f5f2eb;
+    color: #1a1c1b;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-bottom-color: #3b5241;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.btn {
+    font-family: 'Arial', sans-serif;
+    padding: 14px 32px;
+    border: 2px solid transparent;
+    border-radius: 0; 
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+    display: inline-block;
+}
+
+.btn-primary { 
+    background-color: #242625; 
+    color: #ffffff;
+    border-color: #242625;
+}
+
+.btn-primary:hover { 
+    background-color: #ffffff; 
+    color: #242625; 
+}
+
+.btn-success { 
+    background-color: #3b5241; 
+    color: #ffffff;
+    border-color: #3b5241;
+}
+
+.btn-success:hover { 
+    background-color: #ffffff; 
+    color: #3b5241; 
+}
+
+.btn-warning { 
+    background-color: #bd8743; 
+    color: #ffffff;
+    border-color: #bd8743;
+}
+
+.btn-warning:hover { 
+    background-color: #ffffff; 
+    color: #bd8743; 
+}
+
+.btn-danger { 
+    background-color: #a64436; 
+    color: #ffffff;
+    border-color: #a64436;
+}
+
+.btn-danger:hover { 
+    background-color: #ffffff; 
+    color: #a64436; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+th {
+    color: #ffffff;
+    padding: 16px 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #3b5241;
+}
+
+td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #cebfa8;
+    font-size: 14px;
+    color: #242625;
+}
+
+tr:hover {
+    background-color: #f5f2eb;
+}
+
+/* --- alertas --- */
+.alert {
+    font-family: 'Arial', sans-serif;
+    padding: 16px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid;
+}
+
+.alert-success { 
+    background-color: #dbe4de; 
+    color: #1e2b21; 
+    border-color: #b3c5b9;
+}
+
+.alert-danger { 
+    background-color: #f2e2e0; 
+    color: #611e14; 
+    border-color: #e0beba;
+}
+
+.text-center { 
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+
+    .contenedor { 
+        width: 92%; 
+        padding: 30px 20px; 
+        margin: 30px auto;
+    }
+
+    header {
+        padding: 40px 0 10px 0;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+}
